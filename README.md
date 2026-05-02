@@ -29,4 +29,4 @@ This project requires **OpenGL** and **FreeGLUT** to run.
    * `freeglut`
 5. Build and Run!
 
-*(Note for Mac/Linux users: You can compile this via terminal using `g++ main.cpp -o app -lGL -lGLU -lglut`)*
+*(Note for Mac/Linux users: You can compile this via terminal using `g++ main.cpp -o app -lGL -lGLU -lglut && ./app`)*
