@@ -765,7 +765,7 @@ void scene9() {
     moon(1050.0f, 620.0f);
 
     homeGround(true);
-    drawFireflies();
+    if (!isRainEnabled) drawFireflies();
 
     tree(60.0f, 120.0f);
     tree(1120.0f, 125.0f);
@@ -774,7 +774,7 @@ void scene9() {
 
     house(isHouseLightOn);
 
-    bool headOn = (carState_scene9 != 2);
+    bool headOn = (carState_scene9 < 2);
     drawCar(scene9_carPosX, scene9_carPosY, 0.84f, 0.20f, 0.18f, wheelRotationAngle, headOn, true, true);
     drawHeadlightCone(scene9_carPosX, scene9_carPosY, headOn);
 
